@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAVA SCRIPT OBJT</title>
+</head>
+<body>
+    <script>
+        const person = {
+            name: "John",
+            age: 20,
+            phone: 123456789,
+            email: "john@gmail.com",
+            isSubscribed: true,
+        };
+        delete person.age
+        console.log(person); // true
+
+
+
+        const student = {
+            name: "Ayobami",
+            age: 10,
+            score: 75,
+        };
+        console.log("Hello " + student.name); // Hello Ayobami
+
+
+        let tutor = new Map(
+            [
+            ["name", "John"], ["age", 30],
+        ]);
+
+        console.log(tutor.has("score")); // false
+
+        person.delete("name");
+        console.log(tutor); // Map(1) { 'age' => 30 }
+
+
+    </script>
+</body>
+</html>
